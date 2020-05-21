@@ -1,0 +1,23 @@
+{
+  "name": "randomjoke",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TataRozhdez/Random_Joke-.git"
+  },
+  "keywords": [],
+  "author": "Tata_Roshdez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TataRozhdez/Random_Joke-/issues"
+  },
+  "homepage": "https://github.com/TataRozhdez/Random_Joke-#readme",
+  "devDependencies": {
+    "mocha": "^7.1.2"
+  }
+}

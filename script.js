@@ -224,7 +224,6 @@
         };
 
         if (elemLike.classList.contains('like')) {
-          console.log('unLike');
           
           elemLike.classList.remove('like');
           elemLike.classList.add('unlike');
@@ -232,7 +231,6 @@
           renderLocalStorage();
           
         } else if (elemLike.classList.contains('unlike')) {
-          console.log('like');
           
           elemLike.classList.remove('unlike');
           elemLike.classList.add('like');
