@@ -126,7 +126,7 @@
 
     const spanUpdateInfo = document.createElement('span');
     spanUpdateInfo.setAttribute('class', 'update-info');
-    spanUpdateInfo.textContent = 'Last update: ' + `${update_at}`;
+    spanUpdateInfo.textContent = `${update_at}`;
 
     favouriteJoke.appendChild(iconLike);
     favouriteJoke.appendChild(jokeInfo);
