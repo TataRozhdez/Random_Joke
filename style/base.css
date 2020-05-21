@@ -1,0 +1,38 @@
+@import './variables.css';
+@import './main-content.css';
+@import './sidebar.css';
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+  color: var(--base-text-color);
+}
+h1,
+h2,
+h3,
+p,
+body {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none
+}
+body {
+  display: flex;
+  flex-direction: row;
+}
+.icon {
+  width: 20px;
+  height: 17px;
+  cursor: pointer;
+}
+.unlike {
+  background-image: url(../image/unlike.svg);
+}
+.like {
+  background-image: url(../image/like.svg);
+}

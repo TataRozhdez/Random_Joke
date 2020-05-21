@@ -1,0 +1,120 @@
+@import './variables.css'; 
+
+.sidebar{
+  padding: 40px 40px 0;
+  width: 480px; 
+  background-color: var(--element-color);
+}
+.section-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  color: #ABABAB;
+}
+.favourite-joke {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background: #FFFFFF;
+  border: 1px solid #F8F8F8;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.link {
+  color: #8EA7FF;
+}
+.menu-btn {
+  display: none;
+  width: 28px;
+  height: 28px;
+  background-color: var(--base-text-color);
+  border-radius: 50%;
+  position: relative;
+  margin-right: 10px;
+}
+.menu-btn span,
+.menu-btn span::before{
+  position: absolute;
+  top: 57%; margin-top: -1px;
+  left: 50%; margin-left: -7px;
+  width: 14px;
+  height: 2px;
+  background-color: #FFFFFF;
+  border-radius: 2px;
+}
+.menu-btn span::before {
+  content: '';
+  transform: translateY(-5px);
+}
+.menu-btn.active span::before {
+  transform: rotate(90deg);
+}
+.menu-btn.active span {
+  transform: rotate(-45deg);
+  top: 50%;
+}
+
+@media (max-width: 1100px) {
+  .menu-btn {
+    display: block;
+  }
+  .section-title {
+    display: none;
+  }
+  .menu-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    color: #ABABAB;
+    margin-right: 10px;
+    position: absolute;
+    left: 40px;
+  }
+  .sidebar {
+    overflow: hidden;
+    width: 180px; 
+    height: 100px;
+    position: absolute;
+    top: 0;
+    right: 20px;
+    background-color: #FFFFFF;
+  }
+  .sidebar-header {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .sidebar.active {
+    background-color: var(--element-color);
+    width: 480px; 
+    height: 100vh;
+    right: 0;
+  }
+  .sidebar-content {
+    transform-origin: center;
+    transform: scaleY(0) translateY(20%);
+    opacity: 0;
+    transition: 0.2s;
+  }
+  .sidebar-content.active {
+    transform: scaleY(1) translateY(0%);
+    opacity: 1;
+  }
+}
+@media (max-width: 575px) {
+  .sidebar {
+    padding: 20px 20px 0;
+  }
+  .sidebar.active {
+    width: 100%;
+    right: 0;
+  }
+  .menu-title {
+    left: 50px;
+  }
+  .favourite-joke {
+    margin-top: 40px;
+  }
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MSI 2020 - Front-end Development Test</title>
+  <link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style/normalize.css">
+  <link rel="stylesheet" href="./style/base.css">
+</head>
+<body>
+  <main class="content">
+    <header class="page-header">MSI 2020 </header>
+    <h2 class="greeting-title">Hey!</h2>
+    <p class="greeting-text">Let’s try to find a joke for you:</p>
+    <form class="selection-form">
+      <input class="custom-radio" type="radio" id="random" name="joke" value="random">
+      <label for="random">Random</label><br>
+      <div>
+        <input class="custom-radio" type="radio" id="categories" name="joke" value="categories">
+        <label for="categories">From categories</label><br>
+        <div class="search-checkbox">
+          <input class="check-category" type="checkbox" id="animal" value="animal">
+          <label for="animal">animal</label>
+          <input class="check-category" type="checkbox" id="career" value="career"> 
+          <label for="career">career</label>
+          <input class="check-category" type="checkbox" id="celebrity" value="celebrity"> 
+          <label for="celebrity">celebrity</label>
+          <input class="check-category" type="checkbox" id="dev" value="dev"> 
+          <label for="dev">dev</label>
+        </div>
+      </div>
+      <div>
+        <input class="custom-radio" type="radio" id="search" name="joke" value="search">
+        <label for="search">Search</label><br>
+        <input class="search-text" type="search" id="jsearch" name="jsearch" placeholder="Free text search..."><br>
+      </div>
+      <input class="get-joke" type="submit" value="Get a joke" id="get-joke">
+    </form>
+  </main>
+  <section class="sidebar">
+    <div class="sidebar-header">
+      <a class="menu-btn">
+        <span></span>
+        <h3 class="menu-title">Favourite</h3>
+      </a>
+      <h3 class="section-title">Favourite</h3>
+    </div>
+    <div class="sidebar-content">
+    </div>
+  </section>
+  <script src="./script.js"></script>
+</body>
+</html>
